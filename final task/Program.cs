@@ -21,5 +21,4 @@ void PrintArray(string[] array)
     Console.WriteLine();
 }
 CheckWord(array, shortWord);
-Console.WriteLine("Данный массив содержит следующие слова короче трех символов:");
 PrintArray(shortWord);
