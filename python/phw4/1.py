@@ -14,5 +14,13 @@
 # 8.988
 
 
-d =  int(input("Введите число для заданной точности числа Пи:\n"))
-print(f'число Пи с заданной точностью {d} равно {round(pi, d)}')
+
+
+from decimal import Decimal
+
+
+def accuracy (num, acc):
+    number = Decimal (f"{num}")
+    return number.quantize (Decimal (f"{acc}"))
+
+print(accuracy(float(input("введите число ")), float(input("введите желаемую точность в формате 0.0001 "))))
